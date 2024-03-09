@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById<Button>(R.id.button_id)
-        button.setOnClickListener {
+        //val button = findViewById<Button>(R.id.button_id)
+        /*button.setOnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
-        }
+        }*/
 
     }
 }
