@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Studytime App</string>
+    <string name="app_name">StudyTime</string>
+    <string name="main_text_button">Go to dashboard</string>
+    <string name="dashboard_title">Inicio</string>
+    <string name="search">Buscar objetivo</string>
+    <string name="gotham_medium_32">32pt</string>
+    <string name="gotham_medium_24">24pt</string>
+    <string name="gotham_book_18">18pt</string>
+    <string name="gotham_book_16">16pt</string>
+    <string name="gotham_book_14">14pt</string>
+    <string name="gotham_book_12">12pt</string>
 </resources>

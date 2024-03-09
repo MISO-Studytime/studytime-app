@@ -1,4 +1,4 @@
-package com.androidvynils.studytimeapp
+package com.studytime.app
 
 import org.junit.Test
 
