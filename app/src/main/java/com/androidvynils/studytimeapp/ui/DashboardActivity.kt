@@ -9,6 +9,8 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.blue
 import androidx.core.graphics.green
 import androidx.core.graphics.red
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.internal.ScrimInsetsFrameLayout
@@ -21,42 +23,18 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        val navigationView = this.findViewById<NavigationView>(R.id.navigationView)
-        val bottomAppBar = this.findViewById<BottomAppBar>(R.id.bottomAppBar)
+        val topAppBar = this.findViewById<MaterialToolbar>(R.id.topAppBar)
+        val drawerLayout = this.findViewById<DrawerLayout>(R.id.drawer_layout)
+        val navigationView = this.findViewById<NavigationView>(R.id.navigation_view)
 
-        val bottomSheetBehavior = BottomSheetBehavior.from(navigationView)
-        bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
-
-        bottomAppBar.setNavigationOnClickListener {
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+        topAppBar.setNavigationOnClickListener {
+            drawerLayout.open()
         }
-
         navigationView.setNavigationItemSelectedListener { menuItem ->
             // Handle menu item selected
             menuItem.isChecked = true
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+            drawerLayout.close()
             true
         }
-
-        val scrim = this.findViewById<FrameLayout>(R.id.scrim)
-
-        scrim.setOnClickListener {
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
-        }
-
-        bottomSheetBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
-            override fun onSlide(bottomSheet: View, slideOffset: Float) {
-                val baseColor = Color.BLACK
-                // 60% opacity
-                val baseAlpha = ResourcesCompat.getFloat(resources, com.google.android.material.R.dimen.material_emphasis_medium)
-                // Map slideOffset from [-1.0, 1.0] to [0.0, 1.0]
-                val offset = (slideOffset - (-1f)) / (1f - (-1f)) * (1f - 0f) + 0f
-                val alpha = MathUtils.lerp(0f, 255f, offset * baseAlpha).toInt()
-                val color = Color.argb(alpha, baseColor.red, baseColor.green, baseColor.blue)
-                scrim.setBackgroundColor(color)
-            }
-            override fun onStateChanged(bottomSheet: View, newState: Int) {
-            }
-        })
     }
 }
