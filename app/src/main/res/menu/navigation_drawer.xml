@@ -4,18 +4,18 @@
         android:id="@+id/group1"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/item1"
-            android:icon="@drawable/book"
-            android:title="Title 1"
-            android:checked="true" />
+            android:id="@+id/index"
+            android:icon="@drawable/home"
+            android:title="Inicio"
+            />
         <item
             android:id="@+id/item2"
-            android:icon="@drawable/search"
-            android:title="Title 2" />
+            android:icon="@drawable/target"
+            android:title="Crear objetivo" />
         <item
             android:id="@+id/item3"
-            android:icon="@drawable/coffee"
-            android:title="Title 3" />
+            android:icon="@drawable/tab_move"
+            android:title="Salir" />
     </group>
 
 </menu>

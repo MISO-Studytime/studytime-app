@@ -13,21 +13,48 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/logo"
         android:layout_marginTop="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginEnd="24dp"
         android:textAppearance="?attr/textAppearanceHeadline6"
-        android:text="Header title" />
+        android:fontFamily="@font/gothamrnd_medium"
+        android:textColor="@color/pale_olive_green_85"
+        android:textSize="24dp"
+        android:text="@string/app_name" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="10dp"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textColor="@color/material_on_surface_emphasis_medium"
-        android:text="Header text" />
+        android:text="Clark"
+        android:textFontWeight="@integer/material_motion_duration_medium_2">
+    </TextView>
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile">
 
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="-10dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/material_on_surface_emphasis_medium"
+            android:text="clark@email.co"
+            android:textColorHint="@color/light_gray_55">
+        </TextView>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
