@@ -32,13 +32,104 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/editTextUsername"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usuario"
-            android:inputType="text" />
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:translationY="90dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="true"
+            app:boxBackgroundColor="@color/white"
+            app:helperTextEnabled="true"
+            app:helperText="@string/ingresaEmail">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pwdText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:translationY="90dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="true"
+            app:boxBackgroundColor="@color/white"
+            app:endIconMode="password_toggle"
+            app:endIconContentDescription="Show"
+            app:endIconDrawable="@drawable/show"
+            app:helperTextEnabled="true"
+            app:helperText="@string/ingresaContrasena">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrasena"
+                android:inputType="textPassword">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="100dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/olvidasteContrasena"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pale_olive_green_45"
+            android:textColor="@color/white"
+            android:text="@string/iniciar"
+            android:layout_gravity="center"
+            app:rippleColor="@color/pale_olive_green_85"
+            style="?attr/borderlessButtonStyle"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registrarse"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                />
+        </LinearLayout>
+
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
