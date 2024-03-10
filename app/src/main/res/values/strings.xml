@@ -17,4 +17,14 @@
     <string name="olvidasteContrasena">Olvidaste tu contraseña?</string>
     <string name="iniciar">INICIAR</string>
     <string name="registrarse">REGISTRARSE</string>
+    <string name="registroTitle">Registro</string>
+    <string name="registerSubtitle">Ingresa tus datos para completar tu registro</string>
+    <string name="loadImage">Cargar foto</string>
+    <string name="nameTitle">Nombre</string>
+    <string name="nameHelp">Ingresa tu nombre completo</string>
+    <string name="repeatPassword">Repite tu contraseña</string>
+    <string name="repeatPasswordHelp">Vuelve a ingresar tu contraseña</string>
+    <string name="cancelRegister">Cancelar</string>
+    <string name="completeRegister">Crear cuenta</string>
+
 </resources>

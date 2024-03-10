@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
 import android.widget.Button
+import android.widget.TextView
+import com.androidvynils.studytimeapp.ui.RegisterActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.studytime.app.R
@@ -29,11 +31,19 @@ class MainActivity : AppCompatActivity() {
             editTextPassword.text?.let { it1 -> editTextPassword.setSelection(it1.length) }
         }
 
+        //button to signing
         val siginButton = findViewById<Button>(R.id.signInButton)
         siginButton.setOnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
+
+        //button to register
+        val registerButton=findViewById<TextView>(R.id.register)
+        registerButton.setOnClickListener({
+            val intent=Intent(this,RegisterActivity::class.java)
+            startActivity(intent)
+        })
 
     }
 }
