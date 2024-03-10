@@ -10,4 +10,7 @@
     <string name="gotham_book_14">14pt</string>
     <string name="gotham_book_12">12pt</string>
     <string name="fab_content_desc">Crear objetivo</string>
+    <string name="cancel_message">¿Desea cancelar su siguiente sesión? si cancela la sesión puede retomar su rutina al siguiente día programado</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
 </resources>
