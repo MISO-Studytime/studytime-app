@@ -13,4 +13,9 @@
     <string name="cancel_message">¿Desea cancelar su siguiente sesión? si cancela la sesión puede retomar su rutina al siguiente día programado</string>
     <string name="yes">Si</string>
     <string name="no">No</string>
+    <string name="create_objective_title">Crear Objetivo</string>
+    <string name="create_routine_title">Crear rutina</string>
+    <string name="create_choose_study_time">Selecciona tiempo de estudio por rutina</string>
+    <string name="label_study_time">Tiempo estudio</string>
+    <string name="unit">Unidad</string>
 </resources>
