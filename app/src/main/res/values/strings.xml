@@ -18,4 +18,8 @@
     <string name="create_choose_study_time">Selecciona tiempo de estudio por rutina</string>
     <string name="label_study_time">Tiempo estudio</string>
     <string name="unit">Unidad</string>
+    <string name="rest_time_title">Tiempo de descanso</string>
+    <string name="preview">Atrás</string>
+    <string name="next">Siguiente</string>
+    <string name="cancel">Cancelar</string>
 </resources>
