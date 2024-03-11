@@ -38,5 +38,10 @@
     <string name="repeatPasswordHelp">Vuelve a ingresar tu contraseña</string>
     <string name="cancelRegister">Cancelar</string>
     <string name="completeRegister">Crear cuenta</string>
+    <string name="defineObjetiveTitle">Definir objetivo</string>
+    <string name="objetiveNameHint">Dale un nombre a tu objetivo</string>
+    <string name="objetiveCategoryHint">Categoría</string>
+    <string name="objetiveDescriptionHint">Describe tu objetivo</string>
+    <string name="dialogClose">Cerrar</string>
 
 </resources>

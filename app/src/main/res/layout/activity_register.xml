@@ -84,6 +84,9 @@
             android:layout_gravity="center"
             app:rippleColor="@color/pale_olive_green_85"
             style="?attr/borderlessButtonStyle"
+            app:icon="@drawable/backup"
+            app:iconTint="@color/white"
+            app:iconGravity="end"
             android:layout_marginTop="5dp"/>
 
 
