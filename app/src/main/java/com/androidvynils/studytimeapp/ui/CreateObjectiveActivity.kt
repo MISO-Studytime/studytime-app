@@ -8,18 +8,15 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.PopupMenu
 import android.widget.TextView
-import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.navigation.NavigationView
 import com.google.android.material.textfield.TextInputEditText
 import com.studytime.app.R
 
-class CreateObjetiveActivity : AppCompatActivity() {
+class CreateObjectiveActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_objetive)
+        setContentView(R.layout.activity_create_objective)
 
         val button = findViewById<Button>(R.id.nextButton)
         button.setOnClickListener {

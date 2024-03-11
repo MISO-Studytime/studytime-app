@@ -5,8 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.drawerlayout.widget.DrawerLayout
-import com.androidvynils.studytimeapp.ui.CreateObjetiveActivity
-import com.androidvynils.studytimeapp.ui.CreateRoutineActivity
+import com.androidvynils.studytimeapp.ui.CreateObjectiveActivity
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -97,7 +96,7 @@ class DashboardActivity : AppCompatActivity() {
 
         val button = findViewById<FloatingActionButton>(R.id.floating_action_button)
         button.setOnClickListener {
-            val intent = Intent(this, CreateObjetiveActivity::class.java)
+            val intent = Intent(this, CreateObjectiveActivity::class.java)
             startActivity(intent)
         }
 
@@ -105,7 +104,7 @@ class DashboardActivity : AppCompatActivity() {
             // Handle navigation view item clicks here.
             when (menuItem.itemId) {
                 R.id.menu_create_objective -> {
-                    val intent = Intent(this, CreateObjetiveActivity::class.java)
+                    val intent = Intent(this, CreateObjectiveActivity::class.java)
                     startActivity(intent)
                 }
 
