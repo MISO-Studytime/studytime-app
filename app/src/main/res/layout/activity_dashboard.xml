@@ -108,7 +108,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
-
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -121,6 +120,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textFontWeight="@integer/material_motion_duration_medium_2"
+                                    android:drawableRight="@drawable/more_vert"
                                     android:text="Lectura arquitectura hexagonal"
                                     android:textSize="18dp"
                                     android:textAppearance="?attr/textAppearanceHeadline6"
@@ -173,6 +173,7 @@
                                     style="?attr/borderlessButtonStyle"
                                     />
                                 <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/cancel_button_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="left"
@@ -216,6 +217,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textFontWeight="@integer/material_motion_duration_medium_2"
+                                    android:drawableRight="@drawable/more_vert"
                                     android:text="Estudiar examen de Microsoft AZ-204"
                                     android:textSize="18dp"
                                     android:textAppearance="?attr/textAppearanceHeadline6"
@@ -268,6 +270,7 @@
                                     style="?attr/borderlessButtonStyle"
                                     />
                                 <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/cancel_button_2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="left"
@@ -311,6 +314,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textFontWeight="@integer/material_motion_duration_medium_2"
+                                    android:drawableRight="@drawable/more_vert"
                                     android:text="Leer libro de software sostenible"
                                     android:textSize="18dp"
                                     android:textAppearance="?attr/textAppearanceHeadline6"
@@ -363,6 +367,7 @@
                                     style="?attr/borderlessButtonStyle"
                                     />
                                 <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/cancel_button_3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="left"

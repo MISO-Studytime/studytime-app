@@ -9,7 +9,7 @@
             android:title="Inicio"
             />
         <item
-            android:id="@+id/item2"
+            android:id="@+id/menu_create_objective"
             android:icon="@drawable/target"
             android:title="Crear objetivo" />
         <item
