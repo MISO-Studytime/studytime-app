@@ -22,4 +22,5 @@
     <string name="preview">Atrás</string>
     <string name="next">Siguiente</string>
     <string name="cancel">Cancelar</string>
+    <string name="alarm_configuration_title">Configurar alarma</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.androidvynils.studytimeapp.ui
 
 import android.app.Dialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -153,6 +154,12 @@ class CreateRoutineActivity : AppCompatActivity() {
         val preview = this.findViewById<MaterialButton>(R.id.preview)
         preview.setOnClickListener {
             this.onSupportNavigateUp()
+        }
+
+        val next = this.findViewById<MaterialButton>(R.id.next)
+        next.setOnClickListener {
+            val intent = Intent(this, CreateAlarmActivity::class.java)
+            startActivity(intent)
         }
 
     }

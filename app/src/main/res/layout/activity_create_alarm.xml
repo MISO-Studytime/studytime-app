@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidvynils.studytimeapp.ui.CreateAlarmActivity"
+    android:background="@drawable/background_with_texture">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pale_olive_green_85"
+            android:paddingTop="20dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/pale_olive_green_85"
+                app:title="@string/create_objective_title"
+                app:titleTextColor="@color/charcoal_black"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                android:elevation="4dp"
+                app:navigationIcon="@drawable/navigate_before"
+                >
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:scaleType="centerCrop"
+                    android:translationX="80dp"
+                    android:src="@drawable/profile" />
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="90dp"
+            android:src="@drawable/workflow3" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:translationY="60dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textFontWeight="@integer/material_motion_duration_long_2"
+                                android:text="@string/alarm_configuration_title"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/gothamrnd_medium"
+                                android:textSize="18dp"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:layout_marginBottom="5dp"
+                                />
+
+                           <!-- <com.google.android.material.button.MaterialButton
+                                android:id="@+id/next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/pale_olive_green_45"
+                                android:textColor="@color/white"
+                                android:layout_gravity="right"
+                                android:text="@string/next"
+                                android:translationY="-150dp"
+                                app:rippleColor="@color/pale_olive_green_85"
+                                style="?attr/borderlessButtonStyle"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/preview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:backgroundTint="@color/white"
+                                android:textColor="@color/pale_olive_green_45"
+                                android:text="@string/preview"
+                                android:translationY="-200dp"
+                                app:strokeColor="@color/pale_olive_green_45"
+                                app:strokeWidth="2dp"
+                                style="?attr/borderlessButtonStyle"
+                                app:rippleColor="@color/pale_olive_green_45"
+                                />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:backgroundTint="@color/white"
+                                android:textColor="@color/coral_pink_75"
+                                android:text="@string/cancel"
+                                android:translationY="-150dp"
+                                app:strokeColor="@color/coral_pink_75"
+                                app:strokeWidth="2dp"
+                                style="?attr/borderlessButtonStyle"
+                                app:rippleColor="@color/coral_pink_75"
+                                />-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
