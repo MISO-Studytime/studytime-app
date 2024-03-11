@@ -22,4 +22,26 @@
     <string name="preview">Atrás</string>
     <string name="next">Siguiente</string>
     <string name="cancel">Cancelar</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresaEmail">Ingresa tu email</string>
+    <string name="ingresaContrasena">Ingresa tu contraseña</string>
+    <string name="olvidasteContrasena">Olvidaste tu contraseña?</string>
+    <string name="iniciar">INICIAR</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="registroTitle">Registro</string>
+    <string name="registerSubtitle">Ingresa tus datos para completar tu registro</string>
+    <string name="loadImage">Cargar foto</string>
+    <string name="nameTitle">Nombre</string>
+    <string name="nameHelp">Ingresa tu nombre completo</string>
+    <string name="repeatPassword">Repite tu contraseña</string>
+    <string name="repeatPasswordHelp">Vuelve a ingresar tu contraseña</string>
+    <string name="cancelRegister">Cancelar</string>
+    <string name="completeRegister">Crear cuenta</string>
+    <string name="defineObjetiveTitle">Definir objetivo</string>
+    <string name="objetiveNameHint">Dale un nombre a tu objetivo</string>
+    <string name="objetiveCategoryHint">Categoría</string>
+    <string name="objetiveDescriptionHint">Describe tu objetivo</string>
+    <string name="dialogClose">Cerrar</string>
+
 </resources>
