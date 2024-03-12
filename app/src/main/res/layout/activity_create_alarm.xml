@@ -193,7 +193,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                android:hint="@string/start_date_input">
+                                android:hint="@string/end_date_input">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/select_dialog_item_end"
@@ -204,6 +204,54 @@
 
                                 <ImageView
                                     android:id="@+id/time_less_end"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/expand_more"
+                                    android:translationX="300dp"
+                                    android:translationY="-42dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/start_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:hint="@string/start_time">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/select_dialog_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:inputType="none" />
+
+                                <ImageView
+                                    android:id="@+id/time_less_start_time"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/expand_more"
+                                    android:translationX="300dp"
+                                    android:translationY="-42dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/end_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:hint="@string/end_time">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/select_dialog_time_end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:inputType="none" />
+
+                                <ImageView
+                                    android:id="@+id/time_less_end_time"
                                     android:layout_width="32dp"
                                     android:layout_height="32dp"
                                     android:src="@drawable/expand_more"
