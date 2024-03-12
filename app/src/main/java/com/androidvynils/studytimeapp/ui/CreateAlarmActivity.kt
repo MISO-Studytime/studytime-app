@@ -1,17 +1,24 @@
  package com.androidvynils.studytimeapp.ui
 
+import android.app.Dialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.TextView
+import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 import com.studytime.app.R
+import com.studytime.app.ui.DashboardActivity
+import com.studytime.app.ui.MainActivity
 import java.sql.Time
 import java.util.Date
 import java.util.Locale
@@ -44,6 +51,53 @@ import java.util.Locale
         endTime.setOnClickListener{
             this.showTimePickerDialog(endTime)
         }
+
+        val topAppBar = this.findViewById<MaterialToolbar>(R.id.topAppBar)
+
+        topAppBar.setNavigationOnClickListener {
+            this.onSupportNavigateUp()
+        }
+
+        val finish = this.findViewById<MaterialButton>(R.id.finish)
+        finish.setOnClickListener {
+            val dialog = Dialog(this)
+            dialog.setContentView(R.layout.ok_dialog_layout)
+
+            dialog.show()
+
+            val ok = dialog.findViewById<MaterialButton>(R.id.ok_button)
+
+            ok.setOnClickListener {
+                val intent = Intent(this, DashboardActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
+
+        val cancel = this.findViewById<MaterialButton>(R.id.cancel)
+        cancel.setOnClickListener{
+            val dialog = Dialog(this)
+            dialog.setContentView(R.layout.custom_dialog_layout)
+
+            val viewText = dialog.findViewById<TextView>(R.id.dialog_title)
+            viewText.setText("¿Estás seguro que desea cancelar el proceso?")
+
+            dialog.show()
+
+
+            val yes = dialog.findViewById<MaterialButton>(R.id.yes_button)
+            val no = dialog.findViewById<MaterialButton>(R.id.no_button)
+
+            yes.setOnClickListener {
+                val intent = Intent(this, DashboardActivity::class.java)
+                startActivity(intent)
+            }
+
+            no.setOnClickListener {
+                dialog.dismiss()
+            }
+        }
+
     }
 
      private fun showTimePickerDialog(editText: TextInputEditText) {
@@ -86,5 +140,10 @@ import java.util.Locale
          calendar.set(Calendar.MINUTE, minute)
          val dateFormat = SimpleDateFormat("hh:mm a", Locale.getDefault())
          return dateFormat.format(calendar.time)
+     }
+
+     override fun onSupportNavigateUp(): Boolean {
+         onBackPressed() // Handle the Up button click event
+         return true
      }
 }

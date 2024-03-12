@@ -52,7 +52,7 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card"
                     android:layout_width="match_parent"
-                    android:layout_height="500dp"
+                    android:layout_height="wrap_content"
                     app:cardCornerRadius="4dp"
                     android:translationY="60dp"
                     android:layout_marginBottom="510dp"
@@ -260,15 +260,14 @@
 
                             </com.google.android.material.textfield.TextInputLayout>
 
-                           <!-- <com.google.android.material.button.MaterialButton
-                                android:id="@+id/next"
+                           <com.google.android.material.button.MaterialButton
+                                android:id="@+id/finish"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="@color/pale_olive_green_45"
                                 android:textColor="@color/white"
                                 android:layout_gravity="right"
-                                android:text="@string/next"
-                                android:translationY="-150dp"
+                                android:text="@string/finish"
                                 app:rippleColor="@color/pale_olive_green_85"
                                 style="?attr/borderlessButtonStyle"
                                 />
@@ -280,9 +279,9 @@
                                 android:backgroundTint="@color/white"
                                 android:textColor="@color/pale_olive_green_45"
                                 android:text="@string/preview"
-                                android:translationY="-200dp"
                                 app:strokeColor="@color/pale_olive_green_45"
                                 app:strokeWidth="2dp"
+                                android:translationY="-47dp"
                                 style="?attr/borderlessButtonStyle"
                                 app:rippleColor="@color/pale_olive_green_45"
                                 />
@@ -295,13 +294,11 @@
                                 android:backgroundTint="@color/white"
                                 android:textColor="@color/coral_pink_75"
                                 android:text="@string/cancel"
-                                android:translationY="-150dp"
                                 app:strokeColor="@color/coral_pink_75"
                                 app:strokeWidth="2dp"
                                 style="?attr/borderlessButtonStyle"
                                 app:rippleColor="@color/coral_pink_75"
-                                />-->
-
+                                />
                         </LinearLayout>
 
                     </LinearLayout>

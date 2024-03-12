@@ -12,6 +12,8 @@ import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.studytime.app.R
+import com.studytime.app.ui.DashboardActivity
+import com.studytime.app.ui.MainActivity
 
 class CreateObjectiveActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,7 +70,8 @@ class CreateObjectiveActivity : AppCompatActivity() {
             val no = dialog.findViewById<MaterialButton>(R.id.no_button)
 
             yes.setOnClickListener {
-                this.onSupportNavigateUp()
+                val intent = Intent(this, DashboardActivity::class.java)
+                startActivity(intent)
             }
 
             no.setOnClickListener {
