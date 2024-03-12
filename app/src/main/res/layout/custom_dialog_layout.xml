@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/light_gray_95"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="¿Desea cancelar su siguiente sesión? si cancela la sesión puede retomar su rutina al siguiente día programado" />
+ <com.google.android.material.button.MaterialButton
+        android:id="@+id/yes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/coral_pink_75"
+        android:textColor="@color/white"
+        android:text="@string/yes"
+        android:layout_gravity="bottom|right"
+        app:rippleColor="@color/coral_pink_95"
+        style="?attr/borderlessButtonStyle"
+        />
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/no_button"
+      android:layout_width="wrap_content"
+      android:layout_marginTop="-48dp"
+      android:layout_marginLeft="85dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/light_gray_95"
+      android:textColor="@color/pale_olive_green_45"
+      android:text="@string/no"
+      app:strokeColor="@color/pale_olive_green_45"
+      app:strokeWidth="2dp"
+      style="?attr/borderlessButtonStyle"
+      app:rippleColor="@color/pale_olive_green_45"
+      />
+
+</LinearLayout>
