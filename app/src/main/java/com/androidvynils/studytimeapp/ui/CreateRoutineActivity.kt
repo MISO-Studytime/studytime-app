@@ -1,6 +1,7 @@
 package com.androidvynils.studytimeapp.ui
 
 import android.app.Dialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -16,6 +17,7 @@ import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.studytime.app.R
+import com.studytime.app.ui.DashboardActivity
 
 class CreateRoutineActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -142,7 +144,8 @@ class CreateRoutineActivity : AppCompatActivity() {
             val no = dialog.findViewById<MaterialButton>(R.id.no_button)
 
             yes.setOnClickListener {
-                this.onSupportNavigateUp()
+                val intent = Intent(this, DashboardActivity::class.java)
+                startActivity(intent)
             }
 
             no.setOnClickListener {
@@ -153,6 +156,12 @@ class CreateRoutineActivity : AppCompatActivity() {
         val preview = this.findViewById<MaterialButton>(R.id.preview)
         preview.setOnClickListener {
             this.onSupportNavigateUp()
+        }
+
+        val next = this.findViewById<MaterialButton>(R.id.next)
+        next.setOnClickListener {
+            val intent = Intent(this, CreateAlarmActivity::class.java)
+            startActivity(intent)
         }
 
     }
