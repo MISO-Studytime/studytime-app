@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
     <!-- Base application theme. -->
     <style name="Base.Theme.StudytimeApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="fontFamily">@font/gothamrnd_book</item>
@@ -10,4 +10,9 @@
     </style>
 
     <style name="Theme.StudytimeApp" parent="Base.Theme.StudytimeApp" />
+    <style name="CustomMaterialButtonOutlinedStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/pale_olive_green_45</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:strokeWidth">2</item>
+    </style>
 </resources>

@@ -44,5 +44,6 @@
     <string name="objetiveCategoryHint">Categoría</string>
     <string name="objetiveDescriptionHint">Describe tu objetivo</string>
     <string name="dialogClose">Cerrar</string>
-
+    <string name="start_date_input">Fecha Inicio</string>
+    <string name="days">Días:</string>
 </resources>
